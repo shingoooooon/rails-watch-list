@@ -9,7 +9,7 @@
       <div class="card-product-infos">
         <h2><%= bookmark.movie.title %></h2>
         <p><%= bookmark.movie.overview %></p>
-        <p><%= bookmark.movie.rating %></p>
+        <p><em><%= bookmark.movie.rating %></em></p>
       </div>
       <p class="btn btn-light"><%= link_to "Remove", bookmark_path(bookmark), method: :delete %></p>
     </div>
