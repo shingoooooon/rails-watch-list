@@ -1,0 +1,13 @@
+
+<div class="container">
+  <h1 class="text-center mt-5">Movie lists</h1>
+  <p class="btn btn-light"><%= link_to "Add list", new_list_path %></p>
+  <hr>
+  <div class="cards">
+    <% @lists.each do |list| %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://picsum.photos/300/200)">
+        <%= link_to list.name, list_path(list) %>
+      </div>
+    <% end %>
+  </div>
+</div>
