@@ -1,7 +1,7 @@
-<h1 class="text-center text-muted">Movie lists</h1>
-<p class="btn btn-light "><%= link_to "Add list", new_list_path %></p>
-<hr>
 <div class="container">
+  <h1 class="text-center text-muted pt-5">Movie lists</h1>
+  <p class="btn btn-warning "><%= link_to "Add list", new_list_path %></p>
+  <hr>
   <div class="cards">
     <% @lists.each do |list| %>
       <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= list.photo.attached? ? cl_image_path(list.photo.key) : "https://picsum.photos/300/300" %>')">
