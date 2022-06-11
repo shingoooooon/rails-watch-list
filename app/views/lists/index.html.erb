@@ -1,16 +1,24 @@
+
+<div class="banner">
+  <div class="container">
+    <h1 class="text-center text-muted pt-5">Movie lists</h1>
+    <p class="btn btn-warning "><%= link_to "Add list", new_list_path %></p>
+  </div>
+</div>
+
 <div class="container">
-  <h1 class="text-center text-muted pt-5">Movie lists</h1>
-  <p class="btn btn-warning "><%= link_to "Add list", new_list_path %></p>
-  <hr>
   <div class="cards">
     <% @lists.each do |list| %>
       <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= list.photo.attached? ? cl_image_path(list.photo.key) : "../../assets/images/No image.png" %>')">
         <%= link_to '', list_path(list), class:"card-link" %>
         <h3><%= list.name %></h3>
-        <%= link_to list_path(list), method: :delete, class:"remove" do %>
+        <%= link_to list_path(list), method: :delete, class:"remove",  data: {confirm: "Are you sure?"}  do %>
           <i class="far fa-trash-alt"></i>
         <% end %>
       </div>
     <% end %>
+    <%# <div class="right-form">
+      <%= render 'lists/form' %>
+    <%# </div> %>
   </div>
 </div>
