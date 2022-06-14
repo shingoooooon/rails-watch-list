@@ -8,3 +8,58 @@
 legend ~ div.form-check:first-of-type {
   clear: left;
 }
+
+.form {
+  position: sticky;
+  top: 10px;
+  align-self: start;
+}
+
+.submit {
+  background: #FE2905;
+  color: white;
+  border-radius: 5px;
+}
+
+.add {
+  font-size: 25px;
+  padding: 0 8px 4px 8px;
+  margin-bottom: 20px;
+  background: #FE2905;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.add:hover {
+  background: #DF243F;
+}
+
+.home {
+  background: #FE2905;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.home:hover {
+  background: #DF243F;
+  color: white;
+}
+
+.home p {
+  margin: 0;
+  padding: 4px 8px;
+}
+
+.delete {
+  color: gray;
+  font-size: 10px;
+  padding: 4px 8px 4px 8px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.delete:hover {
+  color: white;
+  background: gray;
+}

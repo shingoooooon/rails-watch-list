@@ -1,5 +1,27 @@
 .banner {
-  height: 500px;
-  background-image: url("../../images/theatre.jpeg");
-  // background-image: url("/app/assets/images/theatre.jpeg");
+  height: 400px;
+  background-image: asset_url("ticket.jpg");
+  background-size: cover;
+}
+
+.banner h1 {
+  font-size: 100px;
+}
+
+
+.banner h3 {
+  color: #FE2905;
+}
+
+.show-banner {
+  height: 200px;
+  background-size: cover;
+}
+
+.show-banner h1 {
+  font-size: 100px;
+}
+
+.show-banner h2 {
+  font-size: 50px;
 }

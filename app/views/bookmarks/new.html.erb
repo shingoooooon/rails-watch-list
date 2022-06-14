@@ -1,9 +1,9 @@
-<div class="container">
-  <h1>Add bookmark!</h1>
+<div class="container text-white">
+  <h1>Add Movie</h1>
 
   <%= simple_form_for [@list, @bookmark] do |f| %>
     <%= f.input :comment %>
     <%= f.association :movie %>
-    <%= f.submit %>
+    <%= f.submit class:"submit mt-3"%>
   <% end %>
 </div>
