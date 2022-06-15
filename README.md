@@ -7,7 +7,7 @@ Watch-list is a web application for you to be able to create lists in which you 
 ![Home](/app/assets/images/Watch-iist-home.png "Home")
 
 🎥 List page
-![List](/app/assets/images/Watch-iist-show.png "Show")
+![List](/app/assets/images/Watch-list-show.png "Show")
 
 <br>
 App home: https://watch-list-sk.herokuapp.com/
