@@ -1,24 +1,54 @@
-# README
+# 🎥 Watch list
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Watch-list is a web application for you to be able to create lists in which you will save your favorite movies
+<br>
 
-Things you may want to cover:
+🏠Home
+![Home](/app/assets/images/Watch-iist-home.png "Home")
 
-* Ruby version
+🎥 List page
+![List](/app/assets/images/Watch-iist-show.png "Show")
 
-* System dependencies
+<br>
+App home: https://watch-list-sk.herokuapp.com/
 
-* Configuration
 
-* Database creation
+## Getting Started
+### Setup
 
-* Database initialization
+Install gems
+```
+bundle install
+```
+Install JS packages
+```
+yarn install
+```
 
-* How to run the test suite
+### DB Setup
+```
+rails db:create
+rails db:migrate
+rails db:seed
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Run a server
+```
+rails s
+```
 
-* Deployment instructions
+## Built With
+- [Rails 6](https://guides.rubyonrails.org/) - Backend / Front-end
+- [Heroku](https://heroku.com/) - Deployment
+- [PostgreSQL](https://www.postgresql.org/) - Database
+- [Bootstrap](https://getbootstrap.com/) — Styling
 
-* ...
+## Acknowledgements
+
+## Team Members
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+This project is licensed under the MIT License
